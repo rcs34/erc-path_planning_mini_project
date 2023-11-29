@@ -57,7 +57,7 @@ class RRT():
             stack.extend(current_node.children)
 
     def distance(self,point1,point2):
-        dist = math.sqrt((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2)
+        dist = math.dist(point1,point2)
         return dist
     
     def get_coord_of_new_node(self):
