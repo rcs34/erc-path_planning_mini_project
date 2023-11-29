@@ -78,7 +78,6 @@ class RRT():
 
 
     def plan(self):
-        goal_reached = False
 
         for i in range(self.iterations):
             self.sample_random_point()
